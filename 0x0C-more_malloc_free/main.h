@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <ctype.h>
 
 int _putchar(char c);
 void *malloc_checked(unsigned int b);
@@ -13,5 +14,9 @@ int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 void error(void);
 int is_digit(char *s);
+int main(int argc, char *argv[]);
+int _checknum(char *argv[], int n);
+char *_initialize_array(char *ar, int lar);
+void _is_zero(char *argv[]);
 
 #endif
