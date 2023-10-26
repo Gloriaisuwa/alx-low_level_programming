@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * binary_to_unit - a function that converts binary numbers to intgers
+ * binary_to_uint - a function that converts binary numbers to intgers
  * @b: pointer to a string containg binary numbers
  * Return: the converted number
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int len, i, j, sum, pow;
-	int base;
-
-	base = 2;
-	sum = 0;
-	pow = 1;
+	unsigned int len;
+	size_t i = 0;
+	size_t j = 0;
+	size_t sum = 0;
+	size_t pow = 1;
+	int base = 2;
 
 	if (b == NULL)
 		return (0);
