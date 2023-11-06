@@ -20,7 +20,7 @@ here = here->next->next;
 tortoise = tortoise->next;
 if (here == tortoise)
 {
-tortoise = here;
+tortoise = head;
 while (tortoise != here)
 {
 tortoise = tortoise->next;
